@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+  font-family: 'IBM Plex Sans', serif;
+  /* font-family: 'IBM Plex Serif', sans-serif; */
+  margin: auto;
+  max-width: 600px;
+  background: white;
+  color: #000;
+  hyphens: auto;
+  color: #101010;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 22px;
+}
+
+h2, h3, h4, h5, h6 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/* Paragraph */
+
+p {
+  margin: 0;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+h2 + p {
+  margin-top: 0;
+}
+
+/* Hyperlinks */
+
+a {
+  color: #101010;
+  text-decoration: none;
+}
+
+p > a {
+  color: #000085;
+  font-weight: 500;
+}
+
+p > a:hover {
+  color: #0000FF;
+}
+
+
+a:hover {
+  color: #505050;
+}
+
+/* Lists */
+
+ul, ol {
+  margin: 5px 0;
+}
+
+li {
+  line-height: 1.8;
+}
+
+li ol, li ul {
+  margin: 0;
+}
+
+/* Images */
+
+img {
+  display: block;
+  width: 90%;
+  margin: 20px auto;
+  margin-bottom: 5px;
+}
+
+/* Code CSS */
+
+code {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 14px;
+  background-color: #f5f5f5;
+}
+
+pre {
+  padding: 15px;
+  margin: 20 0;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  overflow: auto;
+}
+
+p code {
+  font-size: 15px;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+/* Table */
+
+table {
+  margin: 25px auto;
+  border-collapse: collapse;
+}
+
+th {
+  border-bottom: solid 1px black;
+  font-weight: 500;
+}
+
+td, th {
+  padding: 7px 12px;
+}
+
+
+
+/* Blockquotes */
+
+blockquote p {
+  font-size: 15px;
+  font-style: italic;
+  margin: 0;
+}
+
+/* Header */
+
+header {
+  height: 30px;
+  width: 100%;
+  margin: 30px auto;
+  font-family: 'IBM Plex Sans', sans-serif;
+  padding: 10px 0;
+  border-bottom: solid black 2px;
+}
+
+.header-title {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1.7em;
+  line-height: 30px;
+  float: left;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.header-title a {
+  text-decoration: none;
+}
+
+.header-title a:hover {
+  color: #0A0A0A;
+}
+
+header li, header ul {
+  display: inline-block;
+  float: right;
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+  font-size: 15px;
+  margin-left: 15px;
+}
+
+header li a {
+  text-decoration: none;
+}
+
+/* Post list */
+.post-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post-list li {
+  margin: 25px 0;
+}
+
+.post-list .post-date {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+/* Footer */
+
+footer {
+  margin: 50px auto;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* Tablets */
+@media screen and (max-width: 900px) {
+  body {
+    max-width: 530px;
+  }
+}
+
+/* Smartphone Tweaks */
+@media screen and (max-width: 450px) {
+
+  body {
+    width: 83%;
+    font-size: 15px;
+  }
+
+  p {
+    text-align: left;
+  }
+
+  blockquote p {
+    font-size: 14px;
+  }
+
+  blockquote {
+    margin: 10px 0;
+    margin-left: 15px;
+  }
+
+  pre {
+    padding: 9px;
+    margin: 10px 0;
+  }
+
+  pre code {
+    font-size: 13px;
+  }
+
+  ul, ol {
+    padding-left: 32px;
+    margin: 0;
+  }
+
+  img {
+    margin: 15px auto;
+  }
+
+  .post-list {
+    margin: 0;
+  }
+
+  .post-list .post-date {
+    display: block;
+  }
+}
