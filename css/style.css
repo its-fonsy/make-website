@@ -4,7 +4,7 @@ body {
   font-family: 'IBM Plex Sans', serif;
   /* font-family: 'IBM Plex Serif', sans-serif; */
   margin: auto;
-  max-width: 600px;
+  max-width: 671px;
   background: white;
   color: #000;
   hyphens: auto;
@@ -27,7 +27,7 @@ h1 {
 h2, h3, h4, h5, h6 {
   font-size: 15px;
   font-weight: 700;
-  margin-top: 25px;
+  margin-top: 33px;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
@@ -84,7 +84,7 @@ li ol, li ul {
 /* Images */
 
 figure {
-  margin: 20px;
+  margin: 40px 20px;
 }
 
 figcaption:before {
@@ -94,11 +94,12 @@ figcaption:before {
 }
 
 figcaption{
-  margin: 4px 0;
+  margin: 15px 0;
   font-weight: 300; 
  }
 
 img {
+  box-shadow: 0 0 10px black;
   display: block;
   width: 100%;
 }
@@ -113,7 +114,7 @@ code {
 
 pre {
   padding: 15px;
-  margin: 20 0;
+  margin: 37px 0;
   border-radius: 5px;
   background-color: #f5f5f5;
   overflow: auto;
@@ -141,8 +142,6 @@ th {
 td, th {
   padding: 7px 12px;
 }
-
-
 
 /* Blockquotes */
 
@@ -200,18 +199,34 @@ header li a {
 
 /* Post list */
 .post-list {
-  list-style-type: none;
   padding: 0;
   margin: 0;
-}
-
-.post-list li {
-  margin: 25px 0;
 }
 
 .post-list .post-date {
   font-size: 13px;
   font-weight: 300;
+}
+
+.post-date, .post-title {
+  margin: 0;
+}
+
+.post-title {
+  padding: 10px 15px;
+  font-weight: 500;
+}
+
+.post-date {
+  padding: 3px 5px;
+  border-top: 2px solid black;
+  text-align: right;
+}
+
+.post-item {
+  margin: 20px 0;
+  border: 2px solid black;
+  border-radius: 5px;
 }
 
 /* Footer */
@@ -233,7 +248,7 @@ footer {
 @media screen and (max-width: 450px) {
 
   body {
-    width: 83%;
+    width: 87%;
     font-size: 15px;
   }
 
@@ -252,7 +267,7 @@ footer {
 
   pre {
     padding: 9px;
-    margin: 10px 0;
+    margin: 30px 0;
   }
 
   pre code {
