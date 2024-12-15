@@ -1,7 +1,13 @@
+---
+title: The DMA on Gameboy DMG-01
+author: Marco Fontana
+date: 2024/12/15
+---
+
 # The DMA on Gameboy DMG-01
+
 This article will explain how to use the DMA of the Gameboy DMG in assembly
 language. Of course it will assume familiarity with the language itself.
-
 
 ## Why use the DMA?
 The job of the DMA is to move data from one section of the memory to another.
@@ -87,7 +93,7 @@ execute code is needed. When compiling the asm code with rgbds toolchain it
 results in a .gb file. Doing an hexdump of the rom it result in something like
 this
 
-```
+```shell
 $ hexdump hello-world.gb
 000000 0000 0000 0000 0000 0000 0000 0000 0000
 *

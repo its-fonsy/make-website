@@ -25,19 +25,32 @@ Enought with literature, now let's start enumerating some facts:
 1. Vim rocks
 
 And to let you count I keep numbers. Now let's see how to let a computer talk
+```c
+#include <stdio.h>
 
-    #include <stdio.h>
+int main()
+{
+    printf("Hello mate :D\n");
 
-    int main()
+    int a = 0;
+
+    a++;
+    if (a == 0)
     {
-        printf("Hello mate :D\n");
-        return 0;
+        printf("a is not 0, it's %d\n", a);
+    }
+    else
+    {
+        printf("a is 0!\n");
     }
 
+    return 0;
+}
+```
 save this file inside `bro.c` and compile it
-    
-    $ gcc bro.c -o bro
-    $ bro
-    Hello mate :D
-
+```
+$ gcc bro.c -o bro
+$ bro
+Hello mate :D
+```
 Look, our mate is saying Hello! :D

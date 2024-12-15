@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Fonsy Blog</title>
+
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+
+  <body>
+
+  <header>
+  <div class="header-title"><a href="../index.html">Fonsy</a></div>
+  <ul>
+    <li><a href="../about.html">About</a></li>
+    <li><a href="../index.html">Posts</a></li>
+  </ul>
+  </header>
+
+  <div class="article-container">
+
+  <h1 id="how-to-format-a-pendrive-to-fat32">How to format a pendrive to
+  FAT32</h1>
+  <p>List al block devices and choose the right
+  <code>/dev/sdX</code></p>
+  <pre class="shell"><code>$ lsblk</code></pre>
+  <p>If you want to fill the pendrive with all zeros run, it will
+  require some times</p>
+  <pre class="shell"><code>$ sudo dd if=/dev/zero of=/dev/sdX status=progress bs=1M</code></pre>
+  <p>Now that the pendrive is zeroed we are going to use
+  <code>fdisk</code> to create a new partition. Run</p>
+  <pre class="shell"><code>$ sudo fdisk /dev/sdX</code></pre>
+
+  </div>
+
+
+  <footer>
+  &#169;2024 Marco Fontana | All Rights Reserved
+  </footer>
+
+  </body>
+
+</html>

@@ -1,35 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root {
+  --fg: #101010;
+  --bg: #FFF;
+  --accent: #000085; 
+  --accent-hl: #0000FF;
+  --bg-code: #f2f2f2;
+}
 
 body {
-  font-family: 'IBM Plex Sans', serif;
-  /* font-family: 'IBM Plex Serif', sans-serif; */
+  font-family: "Libertinus Serif", sans-serif;
   margin: auto;
   max-width: 671px;
-  background: white;
-  color: #000;
+  background: var(--bg);
   hyphens: auto;
-  color: #101010;
-  font-size: 16px;
-  letter-spacing: 0.2px;
+  color: var(--fg);
+  font-size: 1.15rem;
 }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
+  font-weight: bold;
+  font-family: "Libertinus Sans", serif;
 }
 
 h1 {
-  font-size: 22px;
-  font-weight: 700;
-  letter-spacing: 0;
+  font-family: "Libertinus Sans", serif;
+  font-size: 2rem;
+  text-align: center;
+  margin: 45px 0;
+  letter-spacing: 0.1rem;
 }
 
 h2, h3, h4, h5, h6 {
-  font-size: 15px;
-  font-weight: 700;
-  margin-top: 33px;
+  font-size: 1.25rem;
+  letter-spacing: 0.04rem;
+  margin-top: 34px;
   margin-bottom: 10px;
-  text-transform: uppercase;
+  font-variant-caps: small-caps;
 }
 
 /* Paragraph */
@@ -38,8 +44,8 @@ p {
   margin: 0;
   margin-bottom: 5px;
   margin-top: 15px;
-  line-height: 1.6;
-  text-align: left;
+  line-height: 1.36;
+  text-align: justify;
 }
 
 h2 + p {
@@ -49,22 +55,22 @@ h2 + p {
 /* Hyperlinks */
 
 a {
-  color: #101010;
+  color: var(--fg);
   text-decoration: none;
 }
 
 p > a {
-  color: #000085;
+  color: var(--accent);
   font-weight: 500;
 }
 
 p > a:hover {
-  color: #0000FF;
+  color: var(--accent-hl);
 }
 
 
 a:hover {
-  color: #505050;
+  color: var(--accent);
 }
 
 /* Lists */
@@ -88,18 +94,20 @@ figure {
 }
 
 figcaption:before {
-  content: "FIG";
+  content: "Figure:";
   margin-right: 5px;
-  font-weight: 600; 
+  font-weight: 900; 
+  font-size: 1.08rem;
 }
 
 figcaption{
   margin: 15px 0;
   font-weight: 300; 
+  font-size:1.03rem;
  }
 
 img {
-  box-shadow: 0 0 10px black;
+  box-shadow: 0 0 0.9rem var(--fg);
   display: block;
   width: 100%;
 }
@@ -107,21 +115,23 @@ img {
 /* Code CSS */
 
 code {
-  font-family: 'Ubuntu Mono', monospace;
-  font-size: 14px;
-  background-color: #f5f5f5;
+  font-family: "Terminess Nerd Font", monospace;
+  font-size: 1rem;
+  background: var(--bg-code);
+  color: var(--fg);
 }
 
 pre {
   padding: 15px;
-  margin: 37px 0;
-  border-radius: 5px;
-  background-color: #f5f5f5;
+  margin: 25px 0;
+  border-radius: 10px;
+  background: var(--bg-code);
   overflow: auto;
+  line-height: 1;
 }
 
 p code {
-  font-size: 15px;
+  font-size: 0.95rem;
   padding: 2px 4px;
   border-radius: 3px;
 }
@@ -135,7 +145,7 @@ table {
 }
 
 th {
-  border-bottom: solid 1px black;
+  border-bottom: solid 1px var(--fg);
   font-weight: 500;
 }
 
@@ -146,7 +156,7 @@ td, th {
 /* Blockquotes */
 
 blockquote p {
-  font-size: 15px;
+  font-size: 1.08rem;
   font-style: italic;
   margin: 0;
 }
@@ -157,15 +167,17 @@ header {
   height: 30px;
   width: 100%;
   margin: 30px auto;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: "Libertinus Sans", monospace;
+  font-variant-caps: small-caps;
   padding: 10px 0;
-  border-bottom: solid black 2px;
+  border-bottom: solid var(--fg) 2px;
+  text-transform: lowercase;
 }
 
 .header-title {
   display: inline-block;
   font-weight: 700;
-  font-size: 1.7em;
+  font-size: 2rem;
   line-height: 30px;
   float: left;
   text-transform: uppercase;
@@ -177,7 +189,7 @@ header {
 }
 
 .header-title a:hover {
-  color: #0A0A0A;
+  color: var(--accent);
 }
 
 header li, header ul {
@@ -189,7 +201,7 @@ header li, header ul {
 }
 
 header li {
-  font-size: 15px;
+  font-size: 1.2rem;
   margin-left: 15px;
 }
 
@@ -200,41 +212,29 @@ header li a {
 /* Post list */
 .post-list {
   padding: 0;
-  margin: 0;
+  margin: 20px;
+  font-family: "Libertinus Sans", sans-serif;
 }
 
 .post-list .post-date {
-  font-size: 13px;
+  font-size: 1rem;
   font-weight: 300;
-}
-
-.post-date, .post-title {
-  margin: 0;
-}
-
-.post-title {
-  padding: 10px 15px;
-  font-weight: 500;
-}
-
-.post-date {
-  padding: 3px 5px;
-  border-top: 2px solid black;
-  text-align: right;
+  font-family: "Terminess Nerd Font", monospace;
+  margin: 4px 0;
+  text-align: left;
 }
 
 .post-item {
-  margin: 20px 0;
-  border: 2px solid black;
-  border-radius: 5px;
+  margin: 25px 0;
 }
 
 /* Footer */
 
 footer {
   margin: 50px auto;
-  font-size: 13px;
+  font-size: 0.9rem;
   text-align: center;
+  font-family: "Libertinus Sans", sans-serif;
 }
 
 /* Tablets */
@@ -248,21 +248,25 @@ footer {
 @media screen and (max-width: 450px) {
 
   body {
-    width: 87%;
-    font-size: 15px;
-  }
-
-  p {
-    text-align: left;
+    width: 85%;
+    font-size: 1rem;
   }
 
   blockquote p {
-    font-size: 14px;
+    font-size: 0.96rem;
   }
 
   blockquote {
     margin: 10px 0;
     margin-left: 15px;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  h2, h3, h4, h5, h6 {
+    font-size: 1.2rem;
   }
 
   pre {
@@ -271,7 +275,8 @@ footer {
   }
 
   pre code {
-    font-size: 13px;
+    font-size: 0.85rem;
+    line-height: 1.3;
   }
 
   ul, ol {
@@ -281,13 +286,5 @@ footer {
 
   figure {
     margin: 20px 10px;
-  }
-
-  .post-list {
-    margin: 0;
-  }
-
-  .post-list .post-date {
-    display: block;
   }
 }

@@ -1,3 +1,9 @@
+---
+title: Test
+author: Marco Fontana
+date: 2024/12/15
+---
+
 # This is a test post
 
 Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
@@ -86,6 +92,12 @@ int main() {
 	printf("Hello world!\n");
 	return 0;
 }
+```
+
+or HTML
+
+```html
+<div class="test-class"> test </div>
 ```
 
 Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
