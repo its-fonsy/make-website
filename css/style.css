@@ -1,3 +1,7 @@
+@import url('https://fonts.cdnfonts.com/css/libertinus-serif');
+@import url('https://fonts.cdnfonts.com/css/libertinus-sans');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 :root {
   --fg: #101010;
   --bg: #FFF;
@@ -115,8 +119,8 @@ img {
 /* Code CSS */
 
 code {
-  font-family: "Terminess Nerd Font", monospace;
-  font-size: 1rem;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 0.9rem;
   background: var(--bg-code);
   color: var(--fg);
 }
@@ -219,7 +223,7 @@ header li a {
 .post-list .post-date {
   font-size: 1rem;
   font-weight: 300;
-  font-family: "Terminess Nerd Font", monospace;
+  font-family: "Ubuntu Mono", monospace;
   margin: 4px 0;
   text-align: left;
 }
@@ -252,8 +256,18 @@ footer {
     font-size: 1rem;
   }
 
+  .header-title {
+    font-size: 1.8rem;
+    color: red;
+  }
+
   blockquote p {
     font-size: 0.96rem;
+  }
+
+  p {
+    text-align: left;
+    font-size: 1.05rem;
   }
 
   blockquote {
