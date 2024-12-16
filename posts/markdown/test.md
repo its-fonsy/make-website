@@ -106,9 +106,9 @@ anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
 aliquip amet voluptate voluptate dolor minim nulla est proident. Compiling and
 running that code
 
-	$ gcc -o hello hello_world.c
-	$ ./hello
-	Hello world!
+    $ gcc -o hello hello_world.c
+    $ ./hello
+    Hello world!
 
 Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
 labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi

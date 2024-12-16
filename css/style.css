@@ -129,6 +129,7 @@ pre {
   padding: 15px;
   border-radius: 10px;
   background: var(--bg-code);
+  margin: 1em 0;
   overflow: auto;
   line-height: 1;
 }
