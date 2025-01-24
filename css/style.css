@@ -24,12 +24,13 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   font-family: "Libertinus Sans", serif;
+  font-variant-caps: small-caps;
 }
 
 h1 {
   font-family: "Libertinus Sans", serif;
   font-size: 2rem;
-  text-align: center;
+  text-align: left;
   margin: 45px 0;
   letter-spacing: 0.1rem;
 }
@@ -39,7 +40,6 @@ h2, h3, h4, h5, h6 {
   letter-spacing: 0.04rem;
   margin-top: 34px;
   margin-bottom: 10px;
-  font-variant-caps: small-caps;
 }
 
 /* Paragraph */
